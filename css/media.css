@@ -1,0 +1,23 @@
+@media(max-width: 340px){
+    .current-coor{
+        width: 250px;
+    }
+    .all-info{
+        left: 0;
+        width: 225px;
+    }
+    .temp-inner{
+        width: 110px;
+    }
+    .LDHW{
+        padding-right: 0;
+        min-width: none !important;
+        max-width: none !important;
+        width: 100px !important;
+        min-height: 158px;
+    }
+    
+    #quality{
+        font-size: 14px;
+    }
+}

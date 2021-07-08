@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mask">
+        <div class="loader"></div>
+      </div>
+    <div class="main">
+        <div class="container">
+            <div class="current-coor">
+                <div class="all-info">
+                    <div class="temp-inner">
+                        <p class="temperature-symbols">°С / °F</p>
+                        <p id="temperature-num">28°С / 87.3°F</p>
+                        <img src="/img/temp-images/01d.png" id="weatherImg">
+                    </div>
+                    <div class="LDHW">
+                        <p id="location">Ukraine Kyiv</p>
+                        <p><i class="bi bi-calendar"></i><span id="day">Mon</span></p>
+                        <p><i class="bi bi-droplet"></i><span id="humidity">Hum 73%</span></p>
+                        <p><img src="/img/temp-images/planet-earth.png" style="width:14px;" alt=""><span id="quality">48%</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="inputs-inner">
+                <div class="inputs">
+                    <input type="text" placeholder="Country" id="country"/>
+                    <input type="text" placeholder="State" id="state"/>
+                    <input type="text" placeholder="City" id="city"/>
+                    <button id="inputs-inner-btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/loader.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

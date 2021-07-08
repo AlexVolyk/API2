@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* LOADER */
+.loader{
+    width: 75px;
+    height: 75px;
+    border: 4px solid #8a929a;
+    border-radius: 50%;
+    border-left-color: #000000;
+    animation: loader 1.3s linear infinite;
+}
+
+@keyframes loader{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.mask{
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    transition: 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide{
+    opacity: 0;
+}
+/* LOADER */
+.main{
+    background: url('../img/wolfgang-hasselmann-bR_-gllg7Bs-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+    background-color: cornsilk;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 130px 0;
+}
+
+.current-coor{
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: rgba(214, 214, 214, 0.3);
+}
+
+
+.all-info{
+    display: flex;
+    width: 270px;
+    height: 160px;
+    padding: 5px;
+    top: 20px;
+    left: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.temp-inner{
+    width: 120px;
+    max-height: 110px;
+    padding: 5px;
+    padding-top: 10px;
+    padding-left: 7px;
+    position: relative;
+    font-size: 30px;
+    border-radius: 5px;
+    border-bottom-left-radius: 30px;
+    background: rgb(255,255,255);
+    background: linear-gradient(140deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 52%, rgba(181,242,255,0.24163168685442926) 100%);
+}
+
+.temperature-symbols{
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: end;
+}
+
+#temperature-num{
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+#weatherImg{
+    position: absolute;
+    top: 5px;
+    width: 44px;
+    height: 40px;
+}
+
+.bi{
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+
+.LDHW{
+    width: 130px;
+    max-height: 130px;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border-bottom-left-radius: 30px;
+    background: rgb(255,255,255);
+    background: linear-gradient(140deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 52%, rgba(181,242,255,0.24163168685442926) 100%);
+}
+
+.LDHW > p{
+    margin-top: 4px;
+}
+
+.inputs-inner{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.inputs{
+    display: grid;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgb(24, 24, 24, 0.4);
+}
+
+.inputs > input{
+    max-width: 150px;
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.inputs > input:hover{
+    max-width: 150px;
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.inputs > input{
+    max-width: 150px;
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+#inputs-inner-btn{
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+    transition-property: background-color;
+}
+
+#inputs-inner-btn:hover{
+    transition: 0.3s;
+    background-color: rgba(201, 201, 201, 0.726);
+    transition-property: background-color;
+}
+
+#inputs-inner-btn:active{
+    transition: 0.3s;
+    background-color: rgba(143, 143, 143, 0.726);
+    transition-property: background-color;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.others{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.other-weather{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+}
